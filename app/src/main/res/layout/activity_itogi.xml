@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Calc">
+
+    <ImageButton
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="17dp"
+        android:background="@drawable/arrow"
+        android:onClick="backto"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.046"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="300dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="100dp"
+        android:text="@string/Res"
+        android:textColor="@color/purple_200"
+        android:textSize="36dp"
+        android:textStyle="bold"
+        android:paddingLeft="105dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="519dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.171"
+        android:orientation="vertical"
+        android:background="@color/teal_200">
+
+
+        <TextView
+            android:id="@+id/MetersRes"
+            android:layout_width="222dp"
+            android:layout_height="92dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/text"
+            android:hint="@string/CountMet"
+            android:paddingLeft="15dp"
+            android:paddingTop="10dp"
+            android:textSize="28dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/OconRes"
+            android:layout_width="222dp"
+            android:layout_height="89dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/text"
+            android:paddingLeft="70dp"
+            android:paddingTop="10dp"
+            android:text="@string/Res"
+            android:textSize="28dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:layout_width="350dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="200dp"
+            android:background="@drawable/button"
+            android:onClick="Calculated"
+            android:text="@string/Reg"
+            android:textColor="@color/white"
+            android:textSize="28dp" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

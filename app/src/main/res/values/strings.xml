@@ -1,0 +1,23 @@
+<resources>
+
+    <!--    first screen-->
+    <string name="app_name">Flat bank</string>
+    <string name="text">Enter Password and Login</string>
+    <string name="Reg">Registration</string>
+    <string name="Log">Login</string>
+    <string name="Pas">Password</string>
+    <string name="Ent">Enter</string>
+    <!--    second screen-->
+    <string name="CalcS">Calculeted Square</string>
+    <string name="Calc">Calculeted</string>
+    <string name="CountMet">Meters Count</string>
+    <string name="Res">Result</string>
+    <string name="Rooms">One-room apartament \nTwo-room apartament \nThree-room apartament \nFour-room apartament \nStudio apartament</string>
+    <string-array name="Rooms">
+        <item>One-room apartament</item>
+        <item>Two-room apartament</item>
+        <item>Three-room apartament</item>
+        <item>Studio apartament</item>
+    </string-array>
+    <!--    third screen-->
+</resources>
